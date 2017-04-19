@@ -1,0 +1,2 @@
+class CaesarCipher
+end
