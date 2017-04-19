@@ -13,6 +13,10 @@ class CaesarCipher
 
   private
   def shift_letter(letter, key)
-    (letter.ord + key).chr
+    if letter =~ /[a-z]/
+      ((letter.ord + key - 'a'.ord) % 26 + 'a'.ord).chr
+    else
+      shift_letter(letter.downcase, key).upcase
+    end
   end
 end

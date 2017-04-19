@@ -35,7 +35,7 @@ describe CaesarCipher do
     context "given a too big positive key" do
       it "goes back to start of the alphabet after reaching the end" do
         cipher = CaesarCipher.new("wet", 5)
-        expect(cipher.encode).to eq("bgv")  
+        expect(cipher.encode).to eq("bjy")  
       end
     end
 
