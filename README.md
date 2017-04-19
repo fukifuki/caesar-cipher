@@ -1,0 +1,1 @@
+This is a website made as part of Odin Project. It is built in Sinatra and it llets you encode a textual message using Caesar Cipher methodology.
