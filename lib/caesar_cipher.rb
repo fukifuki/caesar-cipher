@@ -6,6 +6,13 @@ class CaesarCipher
   end
 
   def encode
-    text.chars.map { |ch| (ch.ord + key).chr }.join
+    text.chars.map do |char| 
+      char =~ /[A-Za-z]/ ? shift_letter(char, key) : char
+    end.join
+  end
+
+  private
+  def shift_letter(letter, key)
+    (letter.ord + key).chr
   end
 end
