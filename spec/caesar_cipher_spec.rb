@@ -47,9 +47,9 @@ describe CaesarCipher do
     end
 
     context "given a non-alphabtic character" do
-      xit "returns the same character" do
+      it "returns the same character" do
         cipher = CaesarCipher.new("hey, ho!", 3)
-        expect(cipher.encode).to eq("khb, kr!ma")
+        expect(cipher.encode).to eq("khb, kr!")
       end
     end
   end
